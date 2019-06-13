@@ -1,9 +1,71 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
+    <style>
+        body {
+            background-color: skyblue;
+        }
+
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: initial;
+            padding: 20px;
+        }
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+
+
+        .paragraph {
+            margin-left: 170px;
+            position: center;
+            margin-top: -250px;
+            width: 300px;
+            /*text-align:left;*/
+        }
+
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: dodgerblue;
+            color: white;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+            .menu li:hover {
+                background-color: #0099cc;
+            }
+
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="StyleSheetHome.css" />
+    <!--<link rel="stylesheet" href="StyleSheetHome.css" />-->
 </head>
+
 <body>
 
     <div class="header">
@@ -15,25 +77,25 @@
             <ul>
                 <a href="HtmlHomePage.html"><li>Home Page</li></a>
                 <a href="HtmlDynamicDuo.html"><li>Dynamic Duo</li></a>
-                <a href="HtmlResume.html"><li>PJ's Resume</li></a>              
+                <a href="HtmlResume.html"><li>PJ's Resume</li></a>
                 <a href="HtmlAboutUs.html"><li>About Us</li></a>
                 <a href="HtmlProjects.html"><li> Projects </li></a>
             </ul>
+
         </div>
 
-        <div class="col-9">
+        <div class="paragraph" ;>
             <h1>Welcome</h1>
-            <p>
-                My name is PJ Johnson and this is my humble obode.
-                Take your shoes off and stay a while!
-            </p>
-            <p>
-                Here is the 411, on this website that I just created. I am going to have a personal portfolio on here since this website was 100% coded by mua.
-                <hr />
+            <p> My name is PJ Johnson and this is my humble obode. Take your shoes off and stay a while!</p>
+            <p>Here is the 411, on this website that I just created. I am going to have a personal portfolio on here since this website was 100% coded by mua. </p>
 
-            </p>
         </div>
     </div>
-
+    <p id="demo"> A paragraph! </p>
+    <button type="button" onclick="myFunction()">Click it</button>
+    <!--<script src="JavaScriptHome.js"></script>-->
+    <script>function myFunction() {
+            document.getElementById("demo").innerHTML = "You are a TOYYYYY";
+        }</script>
 </body>
 </html>

@@ -4221,6 +4221,7 @@
 		#footer .button {
 			background-color: #5a5a5a;
 			color: #ffffff !important;
+			width: 100%;
 		}
 
 			#footer input[type="submit"]:hover,
